@@ -1,11 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 
-import { api } from "~/utils/api";
-
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <>
       <Head>
@@ -16,7 +12,6 @@ const Home: NextPage = () => {
       <main className="mx-auto my-12 max-w-3xl">
         <h2 className="text-2xl font-semibold">My shopping list</h2>
       </main>
-      
     </>
   );
 };
